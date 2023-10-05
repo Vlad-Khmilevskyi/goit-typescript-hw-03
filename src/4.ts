@@ -56,7 +56,7 @@ abstract class House {
   }
 
   comeIn(person: Person): void {
-    if (this.door) {
+    if (this.door === true) {
       this.tenants.push(person);
     }
   }
